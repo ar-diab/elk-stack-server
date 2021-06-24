@@ -14,7 +14,7 @@ This solution, while time consuming, ensures that we cover every step of the fir
 **Question 2: Unsecured Web Server**
 
 Suppose you find a server running HTTP on port 80, despite compliance guidelines requiring encryption in motion. What do you do?
-​​
+
 In Project 1 we were not dealing with HTTPS traffic, just HTTP which was one reason we could use port 80. In addition, we were also in control of the traffic as there was no external access to our network so we can be sure that no malicious traffic will be coming in through this port. 
 
 Running HTTP on port 80 is a problem because compliance guildines require encryption. Port 80 is used for unecrypted traffic leaving information exposed and vulnerable comprimising integrity and confidentiality. To solve this, I would recommend switching to the HTTPS protocol (and by extension port 443). This way we would be able to encrypt the traffic therefore assuring that a. only those who it's meant for have access to it unencrypted and b. compliance guildines are met.
